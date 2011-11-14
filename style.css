@@ -5,9 +5,9 @@ input, select{border: 1px solid #EA9D10}
 
 input.text{border: 1px solid #EA9D10;}
 input.password{border: 1px solid #EA9D10}
-input.submit{font-size:11px;border: 1px solid #EA9D10; color: #fff; background-color: #F44711;line-height:13px;font-weight: 700; text-align:center; padding:2px; padding-left:6px;padding-right:6px;}
-.bigText{font-size:16px; padding:6px; width:250px; margin-top:2px; line-height:1.28;font-family: "lucida grande",tahoma,verdana,arial,sans-serif;}
-.bigButton{font-size:16px;padding:6px;margin-top:2px;line-height:1.28;color:#fefefe;background-color: #F44711;}
+input.submit{font-size:11px;border: 1px solid #EA9D10; color: #fff; background-color: #C6BA0F;line-height:13px;font-weight: 700; text-align:center; padding:2px; padding-left:6px;padding-right:6px;}
+.bigText{font-size:16px; padding:6px; width:250px;  margin-top:2px; line-height:1.28;font-family: "lucida grande",tahoma,verdana,arial,sans-serif;}
+.bigButton{font-size:16px;padding:6px;margin-top:2px;line-height:1.28;color:#fefefe;background-color: #1F71FF;border:1px solid #CCC;}
 .noBorder{border:none}
 table td{font-size:12px;padding: 2px}
 table{cellspacing: collapse}
