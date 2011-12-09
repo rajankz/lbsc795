@@ -10,6 +10,10 @@
 <head>
 <title>Campus Connection</title>
 <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="css/custom-theme/jquery-ui-1.8.16.custom.css" />
+<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 </head>
 <body>
 	<div id="content">

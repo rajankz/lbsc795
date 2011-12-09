@@ -13,7 +13,7 @@ if ($_POST['process'] == 'signUp') {
 	}
 		
 	//check if email belongs to correct university
-	if($_POST['university']!=""){
+	if($_POST['university']!="null"){
 		$_SESSION['university'] = $_POST['university'];
 		$subject = $_POST['email'];
 		$pattern = '/'.$_POST['university'].'$/';
@@ -54,14 +54,15 @@ if ($_POST['process'] == 'signUp') {
 		//$mail->IsSMTP();
 		$mail->Host = 'ssl://smtp.gmail.com:465';
 		$mail->SMTPAuth = true;
-		$mail->Username = "mailneo28@gmail.com";
-		$mail->Password="kuruvilla";
+		$mail->Username = "connection.campus@gmail.com";
+		$mail->Password="Windows8";
 		$mail->SetLanguage("en","phpmailer/language");
 		
-		$mail->From="mailneo28@gmail.com";
+		$mail->From="connection.campus@gmail.com";
 		$mail->FromName="Do Not Reply";
 		$mail->AddAddress($_POST['email']);
-		$mail->AddReplyTo("mailneo28@gmail.com", "Do Not Reply");
+		$mail->AddBcc("connection.campus@gmail.com");
+		$mail->AddReplyTo("connection.campus@gmail.com", "Campus Connection Admin");
 		$mail->Subject="Campus Connecton Confirmation Link";
 		$mail->Body="Please click on the following link to activate your account.\r\n";
 		$mail->Body .= "http://localhost/~aast/lbsc795/register.php?emailId=".$_POST['email']."&confirmCode=". $confirmCode;
